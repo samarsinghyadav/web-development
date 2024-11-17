@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* child selector  */
+      div > h3 {
+        color: yellow;
+        background-color: brown;
+      }
+      /* desendent seclector */
+      div p {
+        background-color: red;
+        color: rgb(33, 20, 151);
+      }
+      .class {
+        background-color: aqua; /* class selector*/
+        color: red;
+      }
+      * {
+        margin: 0%;
+        padding: 0%; /* universal selesctor*/
+      }
+      /* pseudo selector */
+      a:visited {
+        color: aqua;
+      }
+      /* link selector yese selector hai jo link aap ne ek baar bhi nhai open ki uska colour wo kar dega jo aap dalege  */
+      a:link {
+        color:green;
+      }
+      /* active selector ,jiko aap double tap karege wo colour dusra ho jaya ga jo aap selesct kiye hoge*/
+      a:active {
+        background-color: black;
+      }
+      /* a ka matlab anchor tag aapjisme karna chahate kuch bhi wo tag wha lga skate hai ,,hover matlab aap uspe cursor le jayege to colour hojayega*/
+      a:hover {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>Lorem ipsum dolor sit amet.</h3>
+    </div>
+    <div>
+      <article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </article>
+    </div>
+    <div class="red">
+      <h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </h1>
+    </div>
+    <a href="https://www.Google.com">Google</a> 
+    <a href="https://www.gmail.com">gmail</a>
+  </body>
+</html>

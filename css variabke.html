@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css variable</title>
+    <style>
+      :root {
+        --color: blue; /* ye sab global varible hai jo root ke andar hai but iske kahi use kar di to local */
+        --seccolor: rgb(79, 79, 160);
+        --defpad: 23px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        background-color: var(--color);
+      }
+      .container {
+        background-color: var(--seccolor);
+      }
+      ul li {
+        /* opacity: 0.5; */
+        list-style: none;
+        padding: 34px; /* yaha per defpadd global variable lga diya to yaha per defpadding work karegi  */
+        padding: var(--defpad);
+        /* margin: 1px; */
+        border: 6px solid var(--seccolor);
+      }
+      ul {
+        display: flex;
+        /* diplay flex ki offf kara ti ul ke andar jo likhe hai vo varticel aa jaye ge*/
+      }
+      ul li:first-child {
+        --color: orange;
+        /* maine yha --color ko local varible bna diya hai */
+        background-color: var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>home</li>
+        <li>About</li>
+        <li>contact</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto
+      culpa odio, possimus blanditiis maiores id dolorem dicta tempora doloribus
+      adipisci accusamus expedita quasi. Quasi maxime iure sequi harum doloribus
+      fugiat magni cumque nesciunt illo esse asperiores dolorum culpa quaerat
+      numquam repellendus magnam, inventore nisi.
+    </div>
+  </body>
+</html>

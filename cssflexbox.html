@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        display: flex;
+        height: 70vh;
+        /*justify-content: center;*/ /* justify means horizontal center and align items means verticle center*/
+        align-items: center;
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */ /* flex shrink ke liye wrap ko cmeents kiya*/
+        /* align-content: center; */
+        align-content: flex-start;
+        /* gap: 40px 20px; */
+      }
+      .items {
+        width: 80px;
+        height: 80px;
+        background-color: aqua;
+        border: 2px solid black;
+        margin: 4px;
+        flex-grow: 1;
+      }
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .order-3 {
+        order: 3;
+      }
+
+      .items1 {
+        flex-grow: 2;
+        flex-shrink: 2;
+        /* align-self: flex-end; */
+      }
+      .items2 {
+        flex-shrink: 2;
+        /* align-self: flex-start; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items items1">1</div>
+      <div class="items items2">2</div>
+      <div class="items">3</div>
+      <div class="items order-1">4</div>
+      <div class="items order-2">5</div>
+      <div class="items order-3">6</div>
+      <div class="items">7</div>
+      <!-- <div class="items">8</div>
+      <div class="items">10</div>
+      <div class="items">11</div> -->
+      <!-- <div class="items">12</div>
+      <div class="items">13</div>
+      <div class="items">14</div>
+      <div class="items">15</div> -->
+      <!-- <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div> -->
+    </div>
+  </body>
+</html>
