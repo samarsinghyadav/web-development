@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100px;
+    width: 100px;
+}
+.container{
+    /* width: 95vw; */
+    padding:  2rem 1rem;
+    margin: 0 auto;
+    /* background-color:rgba(226, 226, 226, 0.856); */
+}
+.bodycontainer{
+    width: 100%;
+}
+.headercontainer{
+    margin-bottom: 2.8rem;
+}
+  
+   a{
+    text-decoration: none;
+   }  
+ 
+.headertitle{
+    font-size: 1.7rem;
+    font-weight: 700;
+     margin-bottom: 1rem;
+     line-height: 2rem;
+     text-align: center;
+    
+}
+.headerdisc{
+    max-width: 500px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    color: rgba(32, 32, 32, 0.918);
+}
+.maincontainer{
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr) ;
+}
+ 
+ 
+.cardcontainer{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    flex-direction: column;
+    overflow:hidden;
+}
+ 
+.imgcard{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    /* overflow: hidden; */
+}
+.cardmaincontainer{
+    display: flex;
+        flex-direction: column;
+        margin: 23px 20px;
+    }
+    .cardtitle{
+        color: #262626;
+        margin: 5px auto;
+        
+        font-weight: 600;
+        line-height: 1.5rem;
+
+    }
+    .cardtitle:hover{
+        color: rgb(82, 82, 248);
+    }
+    .cardmaindisc{
+        margin: 5px auto;
+     
+    font-weight: lighter;
+    color: #1c1c1c;
+}
+.avtarcontainer{
+    
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #9997978a;
+    background-color: rgb(243, 239, 239);
+}
+
+.cardfootercontainer{
+display: flex;
+justify-content: space-between;
+}
+.authorcontainer{
+    display:flex;
+    font-family: serif;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 14px;
+}
+.authorinfocontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 9px;
+    padding: 7px;
+}
+
+.cardcontainer:hover .imgcard{
+transform:scale(1.1);
+transition-duration: 200ms;
+
+
+}
+.authorname{
+    color: #1f1ff5;
+}
+.authortagcontainer{
+    
+    border: 1px solid black;
+    /* margin: 8px; */
+    border-radius: 3px;
+    /* padding: 5px; */
+    margin: 27px 22px 13px 0px;
+    padding: 3px;
+}
+
+
+
+
+    
+
+    
+ 
+  
+ 
+
+
+
+ 
