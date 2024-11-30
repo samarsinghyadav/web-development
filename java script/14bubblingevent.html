@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        border: 2px solid black;
+        background-color: yellow;
+        margin: 34px;
+        padding: 34px;
+      }
+      .childcontainer {
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+        background: aqua;
+      }
+      .child {
+        background-color: blueviolet;
+        margin: 6px;
+        padding: 4px;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="childcontainer">
+        <div class="child">hey click me</div>
+      </div>
+    </div>
+  </body>
+  <script>
+
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+        //   e.stopPropagation()
+          alert(" yoou clicked container");
+
+        });
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
+            // e.stopPropagation() /* jo bubbling hogi child container aage nhai hogi matlab ye stop kar deta hai*/
+
+          alert("you clicked childcontainer");
+        });
+        document.querySelector(".child ").addEventListener("click", (e) => {
+          alert("you clicked child");
+          e.stopPropagation() /* jo bubbling hogi wo stop jo jayegi child ke baad*/
+        });
+
+
+
+        function randomcolorgenerate(){
+            let val1 =Math.ceil(0+Math.random() * 255);
+            let val2 =Math.ceil(0+Math.random() * 255);
+            let val3 =Math.ceil(0+Math.random() * 255);
+
+            return `rgb(${val1},${val2},${val3})`
+    }
+    // setinerval repeat hota hai
+    setInterval(() => {
+        document.querySelector(".childcontainer").style.backgroundColor=randomcolorgenerate();
+    },100);
+
+    // // set timeout me ek baar program chalega
+    // setTimeout(() => {
+    //     document.querySelector(".childcontainer").style.backgroundColor=randomcolorgenerate();
+    // },5000);
+
+    
+     
+  </script>
+</html>
