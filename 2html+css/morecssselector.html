@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>more css selector</title>
+    <style>
+      /* .box:first-child{
+          background-color: red; } */
+
+      /* .box:first-child:first-line {
+        color: brown;
+      } */
+
+      /* .boxes * {
+        border: 2px solid black;
+        color: blue;
+      } */
+      /* p,a,.box,[data-color="primary"]{ */
+      /* DATA-COLOR YE EK ATTRIBUTE SELECTOR HAI*/
+      /* padding-top: 45px;
+      } */
+
+      /* .box:nth-child(even){
+        background-color: blueviolet;
+      } */
+       /* .boxes::before{ */
+        /* before ko pesude elemnt bolte hai BEFORE KA USE KARKE HUM CSS KE THROGH EXTRA WORD ADD KAR SAKTE HAI JIS BHI CONTAINER ME LIKHNA HO BEFORE CONTAINER KE ELEMNT SE PAHALE LIKHEGA */
+        /* content: "samar is a good boy";
+        text-transform: capitalize;
+        background-color: brown;
+      } */
+      /* .boxes::after{  */
+        /* AFTER BAAD ME LIKEGA*/
+        /* content: "sigma batch is a op bro nowyou can see";
+        text-transform: capitalize;
+        background-color: rgb(74, 9, 226);
+      } */
+       ::selection{
+        color: aqua;
+        background-color: black;
+       }
+       .box::first-letter{
+        color: peru;
+        font-size: 80px;
+       }
+       input::placeholder{
+        color: rgb(255, 174, 0);
+       }
+    </style>
+  <body>
+    <div class="boxes">
+      <div data-color="primary">hey i ambox</div>
+      <div class="box">hey i am box</div>
+      <div class="box">hey i am box</div>
+      <div class="box">hey i am box</div>
+      <div class="box">hey i am box</div>
+      <input type="text"placeholder="type your name here">sigma batch op
+      
+
+    </div>
+  </body>
+</html>

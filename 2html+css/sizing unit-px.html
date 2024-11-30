@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sizing unit</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        box-sizing: border-box;
+        background-color: red;
+        color: yellow;
+        border: 2px solid black;
+        height: 10vh;
+        /* width: 1366px; */
+        width: 50vw; /* VW VIEW PORT WIDTH*/
+        margin: auto; /* margin auto karne se margin left right eqal ho jati hai(div center hojayega ) but yah sirf block element me work karta hai inline me nhai jaise span */
+      }
+      .samar {
+        /* bydefault 16px hota hai*/
+        font-size: 17px;
+        box-sizing: border-box;
+        background-color: red;
+        color: yellow;
+        border: 2px solid black;
+        /* width: 1366px; */
+        width: 50vw;
+        margin: 23px auto; /* 23px margin hai vo top ki hai auto left righ auto*/
+
+        min-height: 120vh; /*min height ka matlb jo height hgi wo isse kam nhai hogi max ho sakti hai */
+      }
+      .samar p {
+        font-size: 2em;
+      }
+      html {
+        font-size: 2rem;
+      }
+      .mycount {
+        border: 2px solid black;
+        margin: 23px auto;
+        box-sizing: border-box;
+        background-color: aqua;
+        color: black;
+        /* width: 150vmin; */
+        width: 50vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">this is a box</div>
+    <div class="samar">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam
+        tempore deserunt, quae veniam nobis, nesciunt quidem nam, consequatur
+        nulla cupiditate? Nisi eligendi, enim nemo impedit esse suscipit saepe
+        doloribus perferendis. Provident est quas optio quisquam minus! Harum
+        ipsa alias pariatur consequatur repellendus fugit laboriosam?
+      </p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fuga unde
+      ducimus rem delectus enim veniam consequatur pariatur explicabo ullam
+      voluptate nobis qui, temporibus mollitia hic voluptas ex dolorum, porro
+      rerum atque ipsum nesciunt. Voluptatibus ullam repudiandae, iure
+      doloremque cum amet. Cum, totam aspernatur. Et velit sunt vitae error
+      itaque molestiae iusto. Illo expedita repudiandae quis officiis,
+      voluptates assumenda explicabo suscipit enim, dignissimos debitis quas,
+      natus ducimus eius nihil fugiat nam veritatis voluptatibus voluptate optio
+      aut ipsa nisi! Saepe fugit nobis, quisquam illo cumque possimus maiores!
+      Doloribus illum sint veritatis ut nesciunt quas, incidunt commodi
+      repudiandae mollitia adipisci quaerat possimus. Natus adipisci
+      voluptatibus possimus odio vero Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Recusandae magnam, ipsam vel molestias molestiae quaerat
+      magni nam maiores, provident ut officiis eaque dolor sed nulla animi alias
+      voluptate asperiores dolore! quae dolores quo velit nulla veniam, amet
+      nobis hic deleniti. Veniam ducimus dolorem totam earum atque. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Voluptatem eaque recusandae
+      doloremque beatae voluptate, optio quae maiores maxime explicabo. Rerum,
+      sed ex alias dolore accusamus esse nulla reiciendis a delectus!
+    </div>
+    <div class="mycount">i am another container</div>
+  </body>
+</html>

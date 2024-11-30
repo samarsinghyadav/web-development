@@ -1,0 +1,104 @@
+
+.right ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-family: "Segoe UI";
+    cursor: pointer; /* cursore point se hand aa jayega us element me jao ge*/
+    /* border: 2px solid; */
+  }
+  nav {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid; */
+  }
+
+  .box {
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 73px;
+    line-height: 20px;
+
+    /* border: 2px solid; */
+  }
+  .btn{
+    border-radius: 6px;
+    padding: 13px;
+    background-color: rgba(63, 173, 247, 0.932);
+    color: aliceblue;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+    border: none;
+    /* display: flex; */
+    /* border: 2px solid; */
+  }
+  .box p {
+    margin-top: 38px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* border: 2px solid; */
+  }
+  .box h1 img {
+    padding-left: 40px;
+  }
+  .para {
+    font-size: 19px;
+  }
+  .small{
+    font-size: 12px;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .second{
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+
+  }
+  .flex{
+    display: flex;
+  }
+  .green{
+    background-color: #5cb85c;
+    
+  }
+  
+  .items{
+    padding: 23px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+    
+  }
+  .lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding-top: 30vh;
+
+  
+  }
+   
+   
+  
+    
+     
+  
+    
+  
+
+
+ 

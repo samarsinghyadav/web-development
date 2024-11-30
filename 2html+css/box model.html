@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css properties , box model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        background-color: aqua;
+      }
+      .box1 {
+        color: red;
+        margin: 20px;
+        padding: 20px;
+        height: 200px;
+        border: 2px solid black;
+        box-sizing: border-box;
+      }
+      .box2 {
+        /* box1 and box2 me margin huyi hai inme jiski mergin big hogi wahi display pe show hogi  */
+        color: rgb(68, 0, 255);
+        /* color: red; */
+        margin: 10px;
+        padding: 10px;
+        height: 200px;
+        border: 2px solid black;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">this is is the class of box</div>
+    <div class="box box2">this is the another class of box 2</div>
+  </body>
+</html>
